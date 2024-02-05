@@ -4,9 +4,9 @@ import cn from 'clsx'
 import { Button } from 'components/button'
 import { Card } from 'components/card'
 import { Title } from 'components/intro'
-import { Link } from 'components/link'
-import { ListItem } from 'components/list-item'
-import { projects } from 'content/projects'
+// import { Link } from 'components/link'
+// import { ListItem } from 'components/list-item'
+// import { projects } from 'content/projects'
 import { useScroll } from 'hooks/use-scroll'
 import { Layout } from 'layouts/default'
 import { button, useControls } from 'leva'
@@ -24,7 +24,7 @@ import KitchenProject from '../../public/images/kitchen.png'
 import CvProject from '../../public/images/cvsite.png'
 
 // const SFDR = dynamic(() => import('icons/sfdr.svg'), { ssr: false })
-const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
+// const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
 const DownloadIcon = dynamic(() => import('icons/downloadicon.svg'), {
   ssr: false,
 })
@@ -438,38 +438,6 @@ export default function Home() {
           <FeatureCards />
         </section>
       </section>
-      {/* <section
-        ref={(node) => {
-          inuseRectRef(node)
-          inUseRef.current = node
-        }}
-        className={cn('theme-light', s['in-use'], visible && s.visible)}
-      >
-        <div className="layout-grid">
-          <aside className={s.title}>
-            <p className="h3">
-              <AppearTitle>
-                Lenis
-                <br />
-                <span className="grey">in use</span>
-              </AppearTitle>
-            </p>
-          </aside>
-          <ul className={s.list}>
-            {projects.map(({ title, source, href }, i) => (
-              <li key={i}>
-                <ListItem
-                  title={title}
-                  source={source}
-                  href={href}
-                  index={i}
-                  visible={visible}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section> */}
     </Layout>
   )
 }
