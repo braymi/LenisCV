@@ -1,7 +1,7 @@
 {
   "name": "lenis-website",
   "version": "1.0.0",
-  "description": "Lenis is a smooth scroll library to normalize the scrolling experience across devices",
+  "description": "Portfolio website, inspired by Lenis",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
